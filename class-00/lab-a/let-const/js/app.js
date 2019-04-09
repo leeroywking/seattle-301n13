@@ -8,13 +8,13 @@ const rightImage = document.getElementById('right');
 
 let allProducts = [];
 const container = document.getElementById('image_container');
-const viewed = [];
-const labels = [];
-const pics = [leftImage, centerImage, rightImage];
-const list = document.getElementById('productlist');
-const totalClicks = 0;
-const views = [];
-const votes = [];
+let viewed = [];
+let labels = [];
+let pics = [leftImage, centerImage, rightImage];
+let list = document.getElementById('productlist');
+let totalClicks = 0;
+let views = [];
+let votes = [];
 
 function Product(name) {
   this.name = name;
