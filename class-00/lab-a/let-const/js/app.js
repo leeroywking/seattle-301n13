@@ -8,13 +8,13 @@ const rightImage = document.getElementById('right');
 
 let allProducts = [];
 const container = document.getElementById('image_container');
-const viewed = [];
-const labels = [];
-const pics = [leftImage, centerImage, rightImage];
-const list = document.getElementById('productlist');
-const totalClicks = 0;
-const views = [];
-const votes = [];
+let viewed = [];
+let labels = [];
+let pics = [leftImage, centerImage, rightImage];
+let list = document.getElementById('productlist');
+let totalClicks = 0;
+let views = [];
+let votes = [];
 
 function Product(name) {
   this.name = name;
@@ -37,7 +37,7 @@ function displayPics(){
   }
   console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the constiable declaration from `const to `let`.
-  // PUT YOUR RESPONSE IN THIS COMMENT
+  // because rando was code block scoped vs locally scoped as a var 
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
